@@ -37,7 +37,13 @@
       "extendInfo": {
         "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
         "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video)."
-      }
+      },
+      "target": [
+        {
+          "arch": "universal",
+          "target": "dmg"
+        }
+      ]
     },
     "linux": {
       "artifactName": "jitsi-meet-${arch}.${ext}",
@@ -148,8 +154,8 @@
     "babel-loader": "8.1.0",
     "concurrently": "5.1.0",
     "css-loader": "3.5.0",
-    "electron": "10.2.0",
-    "electron-builder": "22.9.1",
+    "electron": "11.1.1",
+    "electron-builder": "22.10.4",
     "electron-builder-notarize": "1.2.0",
     "electron-react-devtools": "0.5.3",
     "eslint": "6.5.1",
