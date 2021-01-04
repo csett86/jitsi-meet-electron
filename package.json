@@ -42,6 +42,10 @@
         {
           "arch": "universal",
           "target": "dmg"
+        },
+        {
+          "arch": "universal",
+          "target": "zip"
         }
       ]
     },
