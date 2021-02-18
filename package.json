@@ -1,6 +1,6 @@
 {
   "name": "jitsi-meet-electron",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "Electron application for Jitsi Meet",
   "main": "./build/main.js",
   "productName": "Jitsi Meet",
@@ -129,7 +129,7 @@
     "electron-window-state": "5.0.3",
     "history": "4.10.1",
     "i18next": "19.4.5",
-    "jitsi-meet-electron-utils": "github:csett86/jitsi-meet-electron-utils#v2.0.20",
+    "jitsi-meet-electron-utils": "github:csett86/jitsi-meet-electron-utils#221ea88096ed5972d1d8648cbc3fc5e5567ee4be",
     "js-utils": "github:jitsi/js-utils#cf11996bd866fdb47326c59a5d3bc24be17282d4",
     "moment": "2.23.0",
     "mousetrap": "1.6.2",
