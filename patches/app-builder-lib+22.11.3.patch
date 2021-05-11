@@ -1,0 +1,13 @@
+diff --git a/node_modules/app-builder-lib/out/publish/PublishManager.js b/node_modules/app-builder-lib/out/publish/PublishManager.js
+index 1e9b4a7..662bdcf 100644
+--- a/node_modules/app-builder-lib/out/publish/PublishManager.js
++++ b/node_modules/app-builder-lib/out/publish/PublishManager.js
+@@ -52,7 +52,7 @@ class PublishManager {
+                         builder_util_1.log.info({ reason: "tag is defined", tag }, "artifacts will be published");
+                         publishOptions.publish = "onTag";
+                     }
+-                    else if (is_ci_1.default) {
++                    else if (is_ci_1) {
+                         builder_util_1.log.info({ reason: "CI detected" }, "artifacts will be published if draft release exists");
+                         publishOptions.publish = "onTagOrDraft";
+                     }
