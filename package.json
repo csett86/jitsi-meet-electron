@@ -119,7 +119,7 @@
     "@atlaskit/icon": "^15.0.3",
     "@atlaskit/navigation": "^33.3.10",
     "@atlaskit/onboarding": "^6.2.0",
-    "@atlaskit/page": "^8.0.12",
+    "@atlaskit/page": "^12.0.6",
     "@atlaskit/panel": "^0.3.5",
     "@atlaskit/spinner": "^9.0.13",
     "@atlaskit/theme": "^7.0.5",
