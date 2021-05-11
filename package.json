@@ -114,7 +114,7 @@
   "dependencies": {
     "@atlaskit/button": "^10.1.3",
     "@atlaskit/css-reset": "^3.0.8",
-    "@atlaskit/droplist": "^7.0.19",
+    "@atlaskit/droplist": "^11.0.7",
     "@atlaskit/field-text": "^7.1.0",
     "@atlaskit/icon": "^15.0.3",
     "@atlaskit/navigation": "^33.3.10",
