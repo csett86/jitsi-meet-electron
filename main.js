@@ -28,14 +28,22 @@ const pkgJson = require('./package.json');
 
 const showDevTools = Boolean(process.env.SHOW_DEV_TOOLS) || (process.argv.indexOf('--show-dev-tools') > -1);
 
+// For enabling remote control, please change the ENABLE_REMOTE_CONTROL flag in
+// app/features/conference/components/Conference.js to true as well
 const ENABLE_REMOTE_CONTROL = false;
 
 // We need this because of https://github.com/electron/electron/issues/18214
 app.commandLine.appendSwitch('disable-site-isolation-trials');
 
-// This allows BrowserWindow.setContentProtection(true) to work on macOS.
-// https://github.com/electron/electron/issues/19880
-app.commandLine.appendSwitch('disable-features', 'DesktopCaptureMacV2,IOSurfaceCapturer');
+// Fix screen-sharing thumbnails being missing sometimes.
+// https://github.com/electron/electron/issues/44504
+const disabledFeatures = [
+    'ThumbnailCapturerMac:capture_mode/sc_screenshot_manager',
+    'ScreenCaptureKitPickerScreen',
+    'ScreenCaptureKitStreamPickerSonoma'
+];
+
+app.commandLine.appendSwitch('disable-features', disabledFeatures.join(','));
 
 // Enable Opus RED field trial.
 app.commandLine.appendSwitch('force-fieldtrials', 'WebRTC-Audio-Red-For-Opus/Enabled/');
